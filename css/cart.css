@@ -1,0 +1,234 @@
+/*
+* @Author: zhengwei
+* @Date:   2016-07-06 23:30:05
+* @Last Modified by:   zhengwei
+* @Last Modified time: 2016-07-07 00:10:59
+*/
+
+body {
+    font-family: 'Microsoft YaHei';
+    min-width: 300px;
+    background-color: #f5f5f5;
+}
+
+#topbar {
+    height: 44px;
+    border-bottom: 1px solid #e0e0e0;
+    background: url(../images/header-bg.png);
+    position: relative;
+    width: 100%;
+}
+
+#topbar > .icon-back {
+    background: url(../images/sprites.png);
+    /* 图片的宽度高度比较大 */
+    /* 我们在页面上看到的高度比较小  所以我们要把背景图压缩得和我们页面需要的那么大的尺寸 */
+    /* 所以我们要把背景图压缩一倍  一半  通常都是压缩一倍 */
+    background-size: 200px 200px;
+    background-position: -20px 0;
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    padding: 12px 10px;
+    /* 背景的定位从盒模型的哪个位置开始有 */
+    background-origin: content-box;
+    /* 背景的范围从哪个地方开始有背景 */
+    background-clip: content-box;
+}
+
+#topbar > .icon-menu {
+    background: url(../images/sprites.png);
+    /* 图片的宽度高度比较大 */
+    /* 我们在页面上看到的高度比较小  所以我们要把背景图压缩得和我们页面需要的那么大的尺寸 */
+    /* 所以我们要把背景图压缩一倍  一半  通常都是压缩一倍 */
+    background-size: 200px 200px;
+    background-position: -60px 0;
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 10px;
+    /* 背景的定位从盒模型的哪个位置开始有 */
+    background-origin: content-box;
+    /* 背景的范围从哪个地方开始有背景 */
+    background-clip: content-box;
+}
+
+#topbar > h3 {
+    text-align: center;
+    line-height: 44px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+/* 安全购物 */
+
+#safetip {
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #c0c0c0;
+    background-color: #fff;
+}
+
+#safetip > p {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#safetip > p::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(../images/safe_icon.png);
+    background-size: 18px 18px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+
+/* 购物车店铺区域 */
+
+#shop {
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+#shop > .shop-title {
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#shop > .shop-title > .shop-title-checkbox {
+    float: left;
+}
+
+.checkbox {
+    width: 40px;
+    height: 34px;
+    background: url(../images/shop-icon.png);
+    background-size: 50px 100px;
+    padding: 7px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+    display: block;
+}
+
+.checkbox[checked] {
+    background-position: -25px 0;
+}
+
+#shop > .shop-title > .shop-title-content {
+    line-height: 30px;
+}
+
+#shop > .shop-title > .shop-title-content > .pull-left > img {
+    width: 15px;
+    height: 13px;
+    float: left;
+    margin-top: 10px;
+}
+
+#shop > .shop-title > .shop-title-content > .pull-left > .shop-name {
+    margin-left: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+#shop > .shop-title > .shop-title-content > .pull-right {
+    font-size: 12px;
+    color: #d8505c;
+    margin-right: 10px;
+}
+
+
+/* 商品区域 */
+
+.product {
+    padding: 10px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.product > .product-checkbox {
+    float: left;
+}
+
+.product > .product-content {
+    overflow: hidden;
+}
+
+.product > .product-content > .product-image {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.product > .product-content > .product-image > img {
+    width: 100%;
+}
+
+.product > .product-content >.product-info {
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.product > .product-content >.product-info >.product-name {
+    font-size: 14px;
+    height: 30px;
+    line-height: 15px;
+    display: block;
+    overflow: hidden;
+}
+
+.product > .product-content >.product-info >.product-price {
+    color: #d8505c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.product-option > .pull-left {
+    margin-top: 5px;
+}
+
+.product-option > .pull-left > span {
+    width: 32px;
+    height: 24px;
+    float: left;
+    text-align: center;
+    border:1px solid #c0c0c0;
+}
+
+.product-option > .pull-left > input {
+     width: 32px;
+    height: 24px;
+    float: left;
+    text-align: center;
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.product-option > .pull-right {
+    margin-top: 5px;
+}
+
+.product-option > .pull-right > span:first-child {
+    width: 20px;
+    height: 5px;
+    display: block;
+    background: url(../images/delete_up.png);
+    -webkit-background-size: 20px 5px;
+    background-size: 20px 5px;
+    margin-left: -1px;
+}
+.product-option > .pull-right > span:last-child {
+    height: 18px;
+    width: 18px;
+    display: block;
+    background: url(../images/delete_down.png);
+    -webkit-background-size: 18px 18px;
+    background-size: 18px 18px;
+}

@@ -1,0 +1,151 @@
+/*
+* @Author: zhengwei
+* @Date:   2016-07-06 11:42:09
+* @Last Modified by:   zhengwei
+* @Last Modified time: 2016-07-07 15:21:46
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Microsoft YaHei';
+}
+
+
+/* 分类头部 */
+
+#topbar {
+    height: 44px;
+    border-bottom: 1px solid #e0e0e0;
+    background: url(../images/header-bg.png);
+    position: absolute;
+    width: 100%;
+}
+
+#topbar > .icon-back {
+    background: url(../images/sprites.png);
+    /* 图片的宽度高度比较大 */
+    /* 我们在页面上看到的高度比较小  所以我们要把背景图压缩得和我们页面需要的那么大的尺寸 */
+    /* 所以我们要把背景图压缩一倍  一半  通常都是压缩一倍 */
+    background-size: 200px 200px;
+    background-position: -20px 0;
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    padding: 12px 10px;
+    /* 背景的定位从盒模型的哪个位置开始有 */
+    background-origin: content-box;
+    /* 背景的范围从哪个地方开始有背景 */
+    background-clip: content-box;
+}
+
+#topbar > .icon-menu {
+    background: url(../images/sprites.png);
+    /* 图片的宽度高度比较大 */
+    /* 我们在页面上看到的高度比较小  所以我们要把背景图压缩得和我们页面需要的那么大的尺寸 */
+    /* 所以我们要把背景图压缩一倍  一半  通常都是压缩一倍 */
+    background-size: 200px 200px;
+    background-position: -60px 0;
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 10px;
+    /* 背景的定位从盒模型的哪个位置开始有 */
+    background-origin: content-box;
+    /* 背景的范围从哪个地方开始有背景 */
+    background-clip: content-box;
+}
+
+#topbar > form {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#topbar > form > input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    margin-top: 7px;
+    padding-left: 10px;
+}
+
+
+/* 分类主体区域 */
+
+#category {
+    height: 100%;
+    padding-top: 45px;
+    overflow: hidden;
+}
+
+#category > .category-left {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+#category > .category-left > ul > li {
+    height: 50px;
+    width: 90px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+}
+
+#category > .category-left > ul > li.now > a {
+    color: #d8505c;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.category-right {
+    height: 100%;
+    overflow: hidden;
+    margin-left: 90px;
+}
+
+.category-right >.category-right-content{
+    /* height: 100%; */
+}
+.category-right >.category-right-content > a {
+    padding: 10px;
+    display: block;
+}
+
+.category-right >.category-right-content > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.product > .product-title > h3 {
+    font-size: 12px;
+}
+
+.product >.product-content > ul > li {
+    width: 33.33%;
+    float: left;
+}
+
+.product >.product-content > ul > li > a > img {
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product >.product-content > ul > li > a > p {
+    text-align: center;
+    font-size: 12px;
+}
